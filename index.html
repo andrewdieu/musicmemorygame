@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      div {
+        text-align: center;
+      }
+      
+      
+    </style>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Andrew's Memory Game</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>The Memory Game</h1>
+    <p>EMERGENCY!</p>
+    <p>Andrew is about to perform at his recital, but he forgot some notes! Help Andrew remember them by playing the correct notes when prompted. Good luck!</p>
+    
+    <div id="picture">
+    <img id="myImage" src="https://i.imgur.com/dnYGoNH.png" 
+         width = "250"
+         >
+  
+  
+    
+    
+    <div id="test">
+      <button onclick="startGame()" id="startBtn">BEGIN</button>
+
+      <button id="stopBtn" class="hidden" onclick="stopGame()">STOP</button>
+    </div>
+    
+    <div id="gameButtonArea">
+      <button
+        id="button1"              
+        onclick="guess(1)"
+        onmousedown="before() & startTone(1)"
+        onmouseup="after() & stopTone()"
+      ></button>
+      <button
+        id="button2"
+        onclick="guess(2)"
+        onmousedown="before() & startTone(2)"
+        onmouseup="after() & stopTone()"
+      ></button>
+      <button
+        id="button3"
+        onclick="guess(3)"
+        onmousedown="before() & startTone(3)"
+        onmouseup="after() & stopTone()"
+      ></button>
+      <button
+        id="button4"
+        onclick="guess(4)"
+        onmousedown="before() & startTone(4)"
+        onmouseup="after() & stopTone()"
+      ></button>
+    </div>
+  </body>
+</html>
